@@ -1,3 +1,4 @@
+import {NumbersCollection} from './NumbersCollection'
 export class Sorter {
 
   constructor(public collection: /* TODO FIX ME */) {

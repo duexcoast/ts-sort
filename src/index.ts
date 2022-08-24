@@ -1,9 +1,10 @@
 import { Sorter } from './Sorter';
-
-const sorter = new Sorter([10, 3, -2, 4, 8]);
+import { NumbersCollection } from './NumbersCollection';
+const numbersCollection = new NumbersCollection([10, 3, -2, 4, 8]);
+const sorter = new Sorter(numbersCollection);
 sorter.sort();
 
-console.log(sorter.collection);
+console.log(numbersCollection.data);
 
 // to get this to work with strings:
 // strings are immutable.
